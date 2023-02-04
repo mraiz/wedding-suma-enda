@@ -1251,7 +1251,13 @@ form label {
   font-family: "Sacramento", Arial, serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
+  .fh5co-heading h2 {
+    font-size: 29px !important;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 400px) {
   .fh5co-heading h2 {
     font-size: 32px !important;
   }
