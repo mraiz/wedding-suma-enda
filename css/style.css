@@ -9,11 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*
-* ======================================================= */
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -21,6 +17,27 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.main-font {
+  font-family: "Sacramento", Arial, serif;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+#receiver {
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 #page {
@@ -1985,6 +2002,9 @@ form label {
     right: 0;
     width: 120px;
   }
+}
+
+.button-open {
 }
 
 /*# sourceMappingURL=style.css.map */
