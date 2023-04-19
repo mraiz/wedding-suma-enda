@@ -19,6 +19,58 @@ body {
   background: #fff;
 }
 
+.button {
+  position: relative;
+  padding: 6px 32px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  color: #6e5080;
+  border: solid 1px rgb(156 192 249);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.button .button-text {
+  position: relative;
+  z-index: 2;
+}
+
+.button .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.button .fill-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6ff;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(-100%);
+}
+.button:hover {
+  border-color: blue;
+  transform: translateY(-4px);
+  color: #fff !important;
+}
+.button:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+.button:hover .fill-container::after {
+  transform: translateY(0);
+}
+
 .no-scroll {
   overflow: hidden !important;
 }
