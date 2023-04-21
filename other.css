@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon/icomoon.eot?6iuir");
+  src: url("fonts/icomoon/icomoon.eot?6iuir#iefix") format("embedded-opentype"),
+    url("fonts/icomoon/icomoon.ttf?6iuir") format("truetype"),
+    url("fonts/icomoon/icomoon.woff?6iuir") format("woff"),
+    url("fonts/icomoon/icomoon.svg?6iuir#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Eksternal */
+
+#fh5co-couple {
+  padding: 7em 0 0em 0;
+  clear: both;
+}
+
+.couple-wrap {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .couple-wrap {
+    width: 100%;
+  }
+
+  .couple-half {
+    margin-bottom: 30px;
+  }
+}
+
+.couple-half {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  .couple-half {
+    width: 100%;
+  }
+}
+.couple-half h3 {
+  font-family: "Sacramento", Arial, serif;
+  color: #6e5080;
+  font-size: 30px;
+}
+.couple-half .groom,
+.couple-half .bride {
+  float: left;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.couple-half .groom img,
+.couple-half .bride img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  .couple-half .groom,
+  .couple-half .bride {
+    width: 100%;
+    height: 140px;
+    display: flex;
+  }
+  .couple-half .groom img,
+  .couple-half .bride img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+.couple-half .groom {
+  float: right;
+  margin-right: 5px;
+}
+.couple-half .bride {
+  float: left;
+  margin-left: 5px;
+}
+.couple-half .desc-groom {
+  padding-right: 180px;
+  text-align: right;
+  font-size: 13px;
+}
+.couple-half .desc-bride {
+  padding-left: 180px;
+  text-align: left;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .couple-half .groom,
+  .couple-half .bride {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .couple-half .desc-groom {
+    padding-right: 0;
+    text-align: center;
+  }
+  .couple-half .desc-bride {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.heart {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  animation: pulse 1s ease infinite;
+}
+.heart i {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px;
+  color: #6e5080;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .heart {
+    display: none;
+  }
+}
+
+.icon-heart2:before {
+  content: "\e9b5";
+}
+
+.flower-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.flower-bot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flower-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
+
+  .flower-bot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+}
+
+.wrap {
+  margin-top: 250px;
+  padding: 8vh 6rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrap {
+    margin-top: 500px;
+  }
+
+  .wrap h2 {
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+.simply-countdown {
+  /* The countdown */
+  margin-bottom: 2em;
+}
+
+.simply-countdown > .simply-section {
+  /* coutndown blocks */
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  margin-top: 30px !important;
+  margin: 0 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  animation: pulse 1s ease infinite;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.simply-countdown > .simply-section > div {
+  /* countdown block inner div */
+  display: table-cell;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+  text-align: left;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  color: #000;
+  /* amounts and words */
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 26px;
+  /* amounts */
+}
+
+.simply-countdown > .simply-section .simply-word {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 9px;
+  /* words */
+}
+
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 22px;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+  }
+
+  .simply-countdown > .simply-section,
+  .simply-countdown > .simply-section > div {
+    width: 50px;
+    height: 70px;
+  }
+
+  .home-img-sm {
+    height: 30vh;
+  }
+
+  .hands {
+    height: 38vh;
+    background-position-y: center;
+    background-attachment: local !important;
+    background-position: center;
+  }
+
+  #story {
+    margin-top: 80px !important;
+  }
+}
+
+.button {
+  position: relative;
+  padding: 6px 32px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  color: #6e5080;
+  border: solid 1px rgb(156 192 249);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.button .button-text {
+  position: relative;
+  z-index: 2;
+}
+
+.button .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.button .fill-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6ff;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(-100%);
+}
+.button:hover {
+  border-color: blue;
+  transform: translateY(-4px);
+  color: #fff !important;
+}
+.button:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+.button:hover .fill-container::after {
+  transform: translateY(0);
+}
+
+#fh5co-testimonial {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text li {
+  cursor: pointer;
+}
+
+#receiver {
+  font-family: "Sacramento", Arial, serif !important;
+}

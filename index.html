@@ -1,133 +1,85 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>The Wedding of Aziz & Niken</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Undangan pernikahan Abdul Aziz Laia dengan Rini Niken Sulistiawati" />
-    <meta
-      name="keywords"
-      content="Wedding of Abdul Aziz Laia and Rini Niken Sulistiawati"
-    />
 
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="other.css" />
 
+    <!-- Bootstrap  -->
     <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
       rel="stylesheet"
-      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
     />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Sacramento"
       rel="stylesheet"
     />
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/7b12bcc245.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <title>The Wedding of Aziz & Niken</title>
   </head>
   <body>
-    <div class="fh5co-loader"></div>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">The Wedding R&A</label>
+      <ul class="text">
+        <li onclick="myFunction(), scrollInto('fh5co-couple')">Mempelai</li>
+        <li onclick="myFunction(), scrollInto('acara')">Acara</li>
+        <li onclick="myFunction(), scrollInto('fh5co-couple-story')">Lokasi</li>
+      </ul>
+    </nav>
 
-    <div id="page">
-      <nav class="fh5co-nav" role="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div id="fh5co-logo" class="text-center">
-                <a href="index.html">The Wedding<strong>.</strong></a>
-              </div>
+    <div class="home hz-margin">
+      <h3>Janji Suci, Satu untuk Selamanya</h3>
+      <h1>Rini & Aziz</h1>
+      <div class="container-out">
+        <div class="container-in text">
+          Sabtu, 06 Mei 2023 <br />
+
+          <div class="simply-countdown simply-countdown-one"></div>
+
+          <div class="mb-4">
+            <div id="receiver" class="mb-3">
             </div>
-            <!-- <div class="col-xs-9 text-right menu-1">
-              <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-				        <li class="pointer"><a onclick="scrollToElement('fh5co-couple')">Mempelai</a></li>
-                <li class="pointer"><a onclick="scrollToElement('fh5co-event')">Acara</a></li>
-                <li class="pointer"><a onclick="scrollToElement('fh5co-couple-story')">Lokasi</a></li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
-      </nav>
-
-      <header
-        id="fh5co-header"
-        class="fh5co-cover"
-        role="banner"
-        style="background-image: url(images/hero-wallpaper.jpeg)"
-        data-stellar-background-ratio="0.2"
-      >
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <div class="display-t">
-                <div
-                  class="display-tc animate-box"
-                  data-animate-effect="fadeIn"
-                >
-                  <h1>Aziz &amp; Niken</h1>
-                  <h2>Janji Suci, Satu untuk Selamanya</h2>
-                  <div style="color: #ffff">Sabtu, 06 Mei 2023</div>
-                  <div class="simply-countdown simply-countdown-one"></div>
-
-                  <div id="receiver">
-                  </div>
-
-                  <div class="btn button-open" onclick="openInvitation()">
-                    <div style="font-size: 12px">Buka Undangan</div>
-                  </div>
-                </div>
+  
+            <div onclick="scrollInto('fh5co-couple')">
+              <div class="btn button-open" style="border: 1px solid #acacac">
+                <div style="font-size: 12px">Buka Undangan</div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+        <div class="home-img" id="home-img-lg"></div>
+      </div>
+    </div>
 
-      <section id="fh5co-couple" style="position: relative;">
+    <div class="home-img home-img-sm"></div>
+    <div class="timeline reveal" style="padding: 0 !important">
+      <section id="fh5co-couple" style="position: relative">
         <div class="container-fluid">
           <div class="row">
             <div
               class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
             >
               <h2>ِبِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</h2>
-              <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
-              <div style="margin-bottom: 20px">
+              <h2 class="mt-4">Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+              <div class="my-4">
                 Maha suci Allah yang telah menciptakan makhluk-nya
                 berpasang-pasangan, semoga ridho-nya mengiringi pernikahan kami
                 pada:
@@ -135,7 +87,7 @@
               <h3>Jum'at, 05 Mei 2022</h3>
             </div>
           </div>
-          <div class="couple-wrap animate-box">
+          <div class="couple-wrap animate-box my-3">
             <div class="couple-half">
               <div class="groom">
                 <img src="images/aziz.png" alt="groom" class="img-responsive" />
@@ -148,7 +100,6 @@
                 </p>
               </div>
             </div>
-            <p class="heart text-center"><i class="icon-heart2"></i></p>
             <div class="couple-half">
               <div class="bride">
                 <img
@@ -168,224 +119,194 @@
             </div>
           </div>
 
-		  <div class="flower-top">
-			<img src="images/flower-foo-top.png" style="width: 100%;" alt="" />
-		  </div>
-		  <div class="flower-bot" style="width: 150px;">
-			<img src="images/flower-foo-bot.png" style="width: 100%;" alt="" />
-		  </div>
-        </div>
-	  </section>
-
-      <section
-        id="fh5co-event"
-        class="fh5co-bg"
-        style="background-image: url('images/bg-event.jpeg')"
-      >
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
-            >
-              <h2>Undangan & Acara</h2>
-              <p class="text-white">akan dilangsungkan di</p>
-              <h5 class="text-white">
-                Jl. Saudara, Gg. Rasmi No.4, Padang Bulan. Kec. Medan Selayang,
-                Kota Medan.
-              </h5>
-            </div>
+          <div class="flower-top">
+            <img src="images/flower-foo-top.png" style="width: 100%" alt="" />
           </div>
-          <div class="row">
-            <div class="display-t">
-              <div class="display-tc">
-                <div class="col-12">
-                  <div class="col-md-6 col-sm-6 text-center">
-                    <div class="event-wrap animate-box">
-                      <h3>Akad Nikah</h3>
 
-                      <div class="event-col">
-                        <i class="icon-calendar"></i>
-                        <span>Jum'at</span>
-                        <span>05 Mei 2023</span>
-                      </div>
-                      <div class="event-col">
-                        <i class="icon-clock"></i>
-                        <span>Pukul</span>
-                        <span>09:00 WIB - Selesai</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6 text-center">
-                    <div class="event-wrap animate-box">
-                      <h3>Resepsi</h3>
+          <div class="flower-bot" style="width: 150px">
+            <img src="images/flower-foo-bot.png" style="width: 100%" alt="" />
+          </div>
+        </div>
 
-                      <div class="event-col">
-                        <i class="icon-calendar"></i>
-                        <span>Sabtu</span>
-                        <span>06 Mei 2023</span>
-                      </div>
-                      <div class="event-col">
-                        <i class="icon-clock"></i>
-                        <span>Pukul</span>
-                        <span>09:00 WIB - Selesai</span>
-                      </div>
-                    </div>
-                  </div>
+        <section id="acara">
+          <div class="container wrap" >
+            <h2>
+              Celebrating Our Love <br />
+              With Those We Love
+            </h2>
+            <div class="timeline-container">
+              <div class="timeline-img"></div>
+              <div class="timings">
+                <h3>01.&nbsp &nbsp AKAD NIKAH</h3>
+                <div class="text">
+                  Jum'at, 05 Mei 2023 pukul 09:00 WIB - Selesai
+                </div>
+                <h3 class="mt-3">02.&nbsp &nbsp Resepsi Pernikahan</h3>
+                <div class="text">
+                  Sabtu, 06 Mei 2023 pukul 09:00 WIB - Selesai
                 </div>
               </div>
             </div>
           </div>
-        </div>
-	  </section>
-
-      <section id="fh5co-couple-story">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
-            >
-              <h2>Peta Lokasi Acara</h2>
-              <p>
-                Silahkan gunakan bantuan peta dibawah ini untuk menuju lokasi
-              </p>
-            </div>
-          </div>
-          <div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 50px;">
-					<div align="center" class="embed-responsive embed-responsive-4by3">
-						<iframe
-						  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.192942710727!2d98.6594722!3d3.5429166999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdca3ee3da5275416!2zM8KwMzInMzQuNSJOIDk4wrAzOSczNC4xIkU!5e0!3m2!1sid!2sid!4v1675533465353!5m2!1sid!2sid"
-						  width="600"
-						  height="450"
-						  style="border: 0"
-						  allowfullscreen=""
-						  loading="lazy"
-						  referrerpolicy="no-referrer-when-downgrade"
-						  style="border-radius: 14px"
-						></iframe>
-					  </div>
-				</div>
-
-				<div class="col-lg-6 col-md-6 col-sm-12" style="display: flex; align-items: center; margin-bottom: 50px">
-					<div>
-						<h4>Merupakan Suatu Kehormatan dan Kebahagiaan</h4>
-						<p>
-							bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan restu kepada kami
-						</p>
-
-            <button class="button">
-              <a href="https://www.google.com/maps/place/Gg.+Rasmi+No.4,+Beringin,+Kec.+Medan+Selayang,+Kota+Medan,+Sumatera+Utara+20146/@3.5429992,98.65677,17z/data=!3m1!4b1!4m5!3m4!1s0x30312fffcd509ddf:0xc0bb13e6f1e1486c!8m2!3d3.5429938!4d98.6593449?hl=id" target="_blank">
-                <span class="button-text">Buka di Map</span>
-                <div class="fill-container"></div>
-              </a>
-            </button>
-					</div>
-				</div>
-			</div>
-          </div>
-        </div>
+        </section>
       </section>
+    </div>
 
-      
-
-      <div id="fh5co-testimonial" class="position-relative">
-        <div class="container-fluid">
-          <div class="row" style="position: relative; padding-top: 130px;">
-            <div class="row animate-box">
-              <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>Wassalamu'alaikum Warahmatullahi Wabarakatuh</h2>
-
-                <div align="center">
-                  <img src="images/thanks.png" class="img-fluid" alt="" />
-                </div>
-
-                <div style="clear: both" role="contentinfo">
-                  <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                      <p>
-                        <div class="block"
-                          >Terimakasih dari Kami yang Berbahagia,</div
-                        >
-                        <div>Aziz & Niken</div>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-				
-              </div>
-            </div>
-
-            <div class="text-center mb-5 fs-14">
-              Created by Abdul Aziz Laia
-            </div>
-
-            <div class="flower-top">
-              <img src="images/flower-foo-top.png" style="width: 100%;" alt="" />
-            </div>
-            <div class="flower-bot">
-              <img src="images/flower-foo-bot.png" style="width: 100%;" alt="" />
-            </div>
-          </div>
+    <div class="">
+      <div class="h-reposition-container">
+        <div id="story" class="container">
+          <h3 class="reveal">
+            Not Just an <br />
+            Ordinary Love Story
+          </h3>
         </div>
 
-		
+        <div class="gallery hz-margin reveal">
+          <div class="gallery-img"></div>
+          <div class="gallery-img"></div>
+          <div class="gallery-img"></div>
+        </div>
+
+        <div class="quote reveal">
+          <h1>
+            “To the world you are one person, but to one person you are the
+            world”.
+          </h1>
+          <div class="author text">Anonymous</div>
+        </div>
+
+        <div class="hands" id="parallax1"></div>
+
+        <section id="fh5co-couple-story" style="margin-top: 120px">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+              >
+                <h2>Lokasi Acara</h2>
+                <p>
+                  Silahkan gunakan bantuan peta dibawah ini untuk menuju lokasi
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mt-5">
+                <div
+                  class="col-lg-6 col-md-6 col-sm-12"
+                  style="margin-bottom: 50px"
+                >
+                  <div
+                    align="center"
+                    class="embed-responsive embed-responsive-4by3"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.192942710727!2d98.6594722!3d3.5429166999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdca3ee3da5275416!2zM8KwMzInMzQuNSJOIDk4wrAzOSczNC4xIkU!5e0!3m2!1sid!2sid!4v1675533465353!5m2!1sid!2sid"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      style="border-radius: 14px"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-6 col-md-6 col-sm-12"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <div>
+                    <h4>Merupakan Suatu Kehormatan dan Kebahagiaan</h4>
+                    <p>
+                      bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk
+                      memberikan doa dan restu kepada kami
+                    </p>
+
+                    <button class="button">
+                      <a
+                        href="https://www.google.com/maps/place/Gg.+Rasmi+No.4,+Beringin,+Kec.+Medan+Selayang,+Kota+Medan,+Sumatera+Utara+20146/@3.5429992,98.65677,17z/data=!3m1!4b1!4m5!3m4!1s0x30312fffcd509ddf:0xc0bb13e6f1e1486c!8m2!3d3.5429938!4d98.6593449?hl=id"
+                        target="_blank"
+                      >
+                        <span class="button-text">Buka di Map</span>
+                        <div class="fill-container"></div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="fh5co-testimonial" class="position-relative">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                  <h2>Wassalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+  
+                  <div align="center">
+                    <img src="images/thanks.png" class="img-fluid" alt="" />
+                  </div>
+  
+                  <div style="clear: both" role="contentinfo">
+                    <div class="row copyright">
+                      <div class="col-md-12 text-center">
+                        <p>
+                          <div class="block"
+                            >Terimakasih dari Kami yang Berbahagia,</div
+                          >
+                          <div>Aziz & Niken</div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+  
+              <div class="text-center mt-5 fs-14">
+                Created by Abdul Aziz Laia
+              </div>
+  
+              <div class="flower-top">
+                <img src="images/flower-foo-top.png" style="width: 100%;" alt="" />
+              </div>
+              <div class="flower-bot">
+                <img src="images/flower-foo-bot.png" style="width: 100%;" alt="" />
+              </div>
+            </div>
+          </div>
+  
+      
+        </div>
       </div>
     </div>
 
-    <div class="gototop js-top">
-      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-    </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- countTo -->
-    <script src="js/jquery.countTo.js"></script>
-
-    <!-- Stellar -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-
-    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-    <script src="js/simplyCountdown.js"></script>
-    <!-- Main -->
-    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="simplyCountdown.js"></script>
+    <script src="main.js"></script>
 
     <script>
       var d = new Date("2023-05-06");
-
-      window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-      }
-
-      // document.body.classList.add('no-scroll');
-      
-      function scrollToElement(id){
-        const element = document.getElementById(id);
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset;
-      
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }
-
-      function openInvitation() {
-        // document.body.classList.remove('no-scroll');
-        scrollToElement('fh5co-couple');
-      }
+      simplyCountdown(".simply-countdown-one", {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+      });
 
       const params = new window.URLSearchParams(window.location.search);
       const receiver = params.get('to')
@@ -403,14 +324,6 @@
         elementReceiver.appendChild(wrapperItem);
         elementReceiver.appendChild(receiverItem);
       }
-
-      // default example
-      simplyCountdown(".simply-countdown-one", {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-      });
-
     </script>
   </body>
 </html>
