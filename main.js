@@ -5,18 +5,18 @@ const parallax2 = document.getElementById("parallax2");
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   parallax.style.backgroundPositionX = offset * -0.3 - 100 + "px";
+
+  if (offset > 100) {
+    document.getElementById("handler-top").classList.add("active");
+  } else {
+    document.getElementById("handler-top").classList.remove("active");
+  }
 });
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   offset -= 3100;
   parallax1.style.backgroundPositionY = offset * 0.1 + "px";
-});
-
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  // offset-=4800;
-  // parallax2.style.backgroundPositionY = offset*(-0.1) + "px";
 });
 
 function myFunction() {
@@ -51,3 +51,7 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+const topPage = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
