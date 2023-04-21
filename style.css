@@ -284,6 +284,7 @@ a:hover {
 }
 #story h3 {
   width: 40vw;
+  margin-top: -100px;
 }
 #story p {
   width: 40vw;
@@ -316,7 +317,7 @@ a:hover {
 
 .gallery {
   display: flex;
-  padding: 20vh 0;
+  padding: 1vh 0;
   justify-content: center;
   align-items: center;
 }
@@ -341,8 +342,9 @@ a:hover {
 }
 @media (max-width: 1000px) {
   .gallery {
-    flex-direction: column;
+    flex-direction: none;
     padding: 0;
+    margin-top: 40px;
   }
   .gallery-img {
     width: 200px;
