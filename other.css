@@ -259,17 +259,25 @@
 
 @media screen and (max-width: 768px) {
   .simply-countdown > .simply-section .simply-amount {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .simply-countdown > .simply-section .simply-word {
     font-size: 10px;
   }
 
+  .simply-countdown > .simply-section .simply-word {
+    margin-top: 12px;
+  }
+
   .simply-countdown > .simply-section,
   .simply-countdown > .simply-section > div {
     width: 50px;
     height: 70px;
+  }
+
+  .simply-countdown > .simply-section {
+    margin-top: 20px !important;
   }
 
   .home-img-sm {
@@ -285,6 +293,10 @@
 
   #story {
     margin-top: 80px !important;
+  }
+
+  nav {
+    margin-bottom: 15vh;
   }
 }
 
@@ -364,6 +376,7 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .gototop.active {
   opacity: 1;
   visibility: visible;
@@ -397,5 +410,61 @@
 }
 
 .js-gotop img {
+  opacity: 0.7;
+}
+
+body {
+  overflow: hidden;
+}
+
+.scrollable {
+  overflow: scroll !important;
+}
+
+.mute-audio {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mute-audio.active {
+  opacity: 1;
+  visibility: visible;
+}
+.mute-audio span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 50% !important;
+  text-align: center;
+  justify-content: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  align-items: center;
+}
+.mute-audio span i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.mute-audio span:hover,
+.mute-audio span:active,
+.mute-audio span:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.mute-audio span img {
   opacity: 0.7;
 }
