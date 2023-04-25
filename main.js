@@ -58,7 +58,7 @@ const topPage = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-let isPlay = true;
+let isPlay = false;
 const muteAudio = () => {
   var audioElem = document.getElementById("musicplayer");
   isPlay = !isPlay;
