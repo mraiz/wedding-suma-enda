@@ -418,7 +418,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .scrollable {
@@ -472,4 +472,27 @@ body {
 
 .mute-audio span img {
   opacity: 0.7;
+}
+
+/* Fonts Sizing*/
+@media only screen and (max-width: 991px) {
+  .bismillah {
+    font-size: 25px !important;
+  }
+
+  .assalamualaikum {
+    font-size: 28px !important;
+  }
+
+  .font-14 {
+    font-size: 14px !important;
+  }
+
+  .name {
+    font-size: 26px !important;
+  }
+
+  .font-18 {
+    font-size: 18px !important;
+  }
 }
