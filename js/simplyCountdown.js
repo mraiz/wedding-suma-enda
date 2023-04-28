@@ -111,7 +111,7 @@
     }
 
     spanTag = document.createElement("span");
-    spanTag.classList.add(parameters.inlineClass);
+    spanTag.className += " " + parameters.inlineClass;
     return spanTag;
   };
 
