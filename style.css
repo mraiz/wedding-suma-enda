@@ -184,6 +184,7 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
     padding-left: 0;
+    z-index: 99;
   }
 }
 
