@@ -221,7 +221,7 @@
           hours = 0;
           minutes = 0;
           seconds = 0;
-          window.clearInterval(interval);
+          clearInterval(interval);
           parameters.onEnd();
         }
 
@@ -296,7 +296,7 @@
 
       // Refresh immediately to prevent a Flash of Unstyled Content
       refresh();
-      interval = window.setInterval(refresh, parameters.refresh);
+      interval = setInterval(refresh, parameters.refresh);
     });
   };
 
