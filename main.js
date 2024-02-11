@@ -113,7 +113,7 @@ if (receiver) {
 
 function copyRekening() {
   const textarea = document.createElement("textarea");
-  textarea.value = "7136046424";
+  textarea.value = "5289-01-010912-53-7";
   textarea.style.position = "absolute";
   textarea.style.left = "-9999px";
 
@@ -123,5 +123,20 @@ function copyRekening() {
   document.execCommand("copy");
 
   document.body.removeChild(textarea);
-  alert("Berhasil copy!");
+  alert("Nomor rekening berhasil dicopy!");
+}
+
+function copyNomor() {
+  const textarea = document.createElement("textarea");
+  textarea.value = "082360990624";
+  textarea.style.position = "absolute";
+  textarea.style.left = "-9999px";
+
+  document.body.appendChild(textarea);
+  textarea.select();
+  textarea.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  document.body.removeChild(textarea);
+  alert("Nomor berhasil dicopy!");
 }

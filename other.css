@@ -347,7 +347,6 @@
 .button:hover {
   border-color: blue;
   transform: translateY(-4px);
-  color: #fff !important;
 }
 .button:hover .fill-container {
   transform: translateY(-50%) rotate(0);
