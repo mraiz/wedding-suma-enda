@@ -85,7 +85,7 @@ window.addEventListener("click", function () {
   audioElem.play();
 });
 
-var d = new Date("2023-05-06 09:00:00");
+var d = new Date("2024-02-24 10:00:00");
 simplyCountdown(".simply-countdown-one", {
   year: d.getFullYear(),
   month: d.getMonth() + 1,
@@ -109,4 +109,19 @@ if (receiver) {
 
   elementReceiver.appendChild(wrapperItem);
   elementReceiver.appendChild(receiverItem);
+}
+
+function copyRekening() {
+  const textarea = document.createElement("textarea");
+  textarea.value = "7136046424";
+  textarea.style.position = "absolute";
+  textarea.style.left = "-9999px";
+
+  document.body.appendChild(textarea);
+  textarea.select();
+  textarea.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  document.body.removeChild(textarea);
+  alert("Berhasil copy!");
 }
